@@ -1,0 +1,106 @@
+body{
+    background: rgb(78, 20, 76);
+    background: -moz-linear-gradient(124deg, rgba(78, 20, 76, 1) 0%, rgba(186, 20, 113, 1) 49%, rgba(233, 21, 21, 1) 100%);
+    background: -webkit-linear-gradient(124deg, rgba(78, 20, 76, 1) 0%, rgba(186, 20, 113, 1) 49%, rgba(233, 21, 21, 1) 100%);
+    background: linear-gradient(124deg, rgba(78, 20, 76, 1) 0%, rgba(186, 20, 113, 1) 49%, rgba(233, 21, 21, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4e144c", endColorstr="#e91515", GradientType=1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#box{
+    position: relative;
+    border-radius: 8px;
+    height: 500px;
+    width: 800px;
+    display: flex;
+    box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 20%);
+}
+
+.btn{
+    position: absolute;
+    z-index: 8;
+    height: 40px;
+    width: fit-content;
+    border-radius: 20px 20px 20px 20px;
+    padding: 0px 8px;
+    display: flex;
+    align-items: center;
+    opacity: 70%;
+    border: none;
+}
+
+img{
+    position: absolute;
+    height: 150px;
+    z-index: 8;
+    top: 32%;
+    right: 41%;
+}
+
+.btn1{
+    top: 20%;
+    right: 44%;
+}
+
+.btn2 {
+    top: 66%;
+    right: 44.8%;
+}
+
+.btn3 {
+    top: 80%;
+    right: 47%
+}
+
+
+.players-side{
+    z-index: 1;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.players-side > h1{
+    margin-top: 80px;
+}
+
+.players-side > p{
+    margin-top: 0;
+    font-size: 4rem;
+}
+
+.players-side .total-score p{
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+#player1side{
+    border-radius: 8px 0px 0px 8px;
+    background-color: rgb(250, 130, 238);
+}
+
+.total-score{
+    background-color: rgb(210, 69, 69);
+    margin-top: 50px;
+    border-radius: 8px;
+    height: 120px;
+    width: 200px;
+    color: white;
+}
+
+.myTurn{
+    opacity: 80%;
+}
+/* ------------------------------------------------------------------------------- */
+
+#player2side{
+    border-radius: 0px 8px 8px 0px;
+    background-color: red;
+    background-color: rgb(250, 130, 238);
+}
